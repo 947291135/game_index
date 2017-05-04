@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="js/imgshow.js"></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.index{
+				width: 10px;
+				height: 2000px;
+			}
+			ul{
+				list-style-type: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.imgshow{
+				height: 800px;
+				position: relative;
+				overflow: hidden;
+			}
+			.imgwidth{
+				height: 100%;
+				position: absolute;
+			}
+			.imgshow .imgwidth li{
+				float: left;
+			}
+			.imgshow .imgwidth li a img{
+				height: 800px;
+			}
+			div.newbtn{
+				width: 70px;
+				height: 70px;
+				position: absolute;
+				top: 50%;
+				margin-top: -35x;
+			}
+			
+			.left_but{
+				background: url(img/sprite_home.png) no-repeat ;
+				left: 30px;
+				cursor: pointer;
+			}
+			.left_but a.other{
+				width: 100%;
+				height: 100%;
+				content: "";
+				position: absolute;
+				top: 0;
+				background: url(img/sprite_home.png) no-repeat -70px 0px;
+				display: none;
+			}
+			.right_but a.other{
+				width: 100%;
+				height: 100%;
+				content: "";
+				position: absolute;
+				top: 0;
+				background: url(img/sprite_home.png) no-repeat -70px -70px;
+				display: none;
+			}
+			.right_but{
+				background: url(img/sprite_home.png) no-repeat 0px -70px;
+				right: 30px;
+			}
+			.img_nav{
+				width: 100%;
+				z-index: 1;
+				bottom: 55px;
+				position: absolute;
+				text-align: center;
+			}
+			.img_nav span{
+				width: 50px;
+				height: 2px;
+				margin: 0 2px;
+				display: inline-block;
+			}
+			.img_nav span:nth-child(3n+1){
+				background: #e5c674;
+			}
+			.img_nav span:nth-child(3n+2){
+				background: #6e58a3;
+			}
+			.img_nav span:nth-child(3n+3){
+				background: #a2aacf;
+			}
+			.img_information{
+				position: relative;
+				margin-top: 260px;
+				margin-left: 20%;
+				color: #cfcfcf;
+				font-size: 14px;
+			}
+			.img_information ul li{
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: all .3s;
+				opacity: 0;
+			}
+			.img_information ul li.active{
+				opacity: 1;
+				z-index: 1;
+			}
+			.img_information ul li h2{
+				display: inline-block;
+				font-size: 60px;
+				color: #fff;
+				line-height: 60px;
+			}
+			.img_information ul li h2 p{
+				color: #000;
+			}
+			.img_information ul li h2 span{
+				font-size: 20px;
+				display: block;
+			}
+			.img_information ul li .information_info{
+				width: 505px;
+				padding-top: 9px;
+				line-height: 35px;
+				border-top: 2px dashed #fff;
+			}
+			.img_information ul li a.information_btn{
+				    display: inline-block;
+				    margin-top: 20px;
+				    width: 170px;
+				    height: 55px;
+				    line-height: 55px;
+				    font-size: 21px;
+				    color: #fff;
+				    letter-spacing: 1px;
+				    text-align: center;
+				    font-style: normal;
+				    background: url(img/sprite_home.png) no-repeat -158px -4px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="imgshow">
+			<ul class="imgwidth">
+				<li><a href="#"><img src="img/show.jpg"/></a></li>
+				<li><a href="#"><img src="img/show (1).jpg"/></a></li>
+				<li><a href="#"><img src="img/show (2).jpg"/></a></li>
+				<li><a href="#"><img src="img/show (3).jpg"/></a></li>
+				<li><a href="#"><img src="img/show (4).jpg"/></a></li>
+			</ul>
+			<div class="left_but newbtn" >
+				<a class="other"></a>
+			</div>
+			<div class="right_but newbtn">
+				<a class="other"></a>
+			</div>
+			<div class="img_nav">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="img_information">
+					<ul>
+						<li class="active">
+							<h2>
+								我的战争
+								<span>战火一触即发</span>
+							</h2>
+							<div class="information_info">
+								<p>以二战史实为背景的卡通风格战争策略RTS手游。玩家可以自由选择二战中的经典国家，统率各具特色的特种兵部队，参与到完美复刻的著名历史战役中。选择自己喜欢的国家，穿越到二战战场，创造一个不一样的二战历史，将带来一种别样的游戏体验。</p>
+							</div>
+							<a class="information_btn" href="#">查看详情</a>
+						</li>
+						<li>
+							<h2>
+								<p>仙剑奇侠传3D回合</p>
+								<p><span>战火一触即发</span></p>
+							</h2>
+							<div class="information_info">
+								<p>大宇正版授权仙剑全系列3DMMORPG回合制大型手游，全3D画面、立体飞行坐骑、开放式场景、姚仙订制专属剧情，且在众多仙剑传统产品中首次引入阵营概念——仙盟剑盟激烈对抗。仙剑21年，御剑乘风！</p>
+							</div>
+							<a class="information_btn" href="#">查看详情</a>
+						</li>
+						<li>
+							<h2>
+								自由之战2
+								<span>定义移动MOBA 2.0</span>
+							</h2>
+							<div class="information_info">
+								<p>《自由之战》的全新续作，从玩法、视觉、平衡性、荣誉、资源及赛事等多角度出发，合力打造出引领未来的MOBA手游。</p>
+							</div>
+							<a class="information_btn" href="#">查看详情</a>
+						</li>
+						<li>
+							<h2>
+								甲铁城的卡巴内瑞
+								<span>中日联合打造官方游戏</span>
+							</h2>
+							<div class="information_info">
+								<p>日本版权方正版授权，100%正统还原原著剧情，在游戏中体验末世浩劫，自由探索危机世界，打造属于自己的家园。</p>
+							</div>
+							<a class="information_btn" href="#">查看详情</a>
+						</li>
+						<li>
+							<h2>
+								巫师之昆特牌
+								<span>你就是王牌</span>
+							</h2>
+							<div class="information_info">
+								<p>《巫师之昆特牌》是一款免费的在线卡牌游戏，其设定源自《巫师》系列小说；它的原型最初出现在《巫师》游戏系列的第三作《巫师 3：狂猎》中 ，强调兵不厌诈、临场决策和精心布局的创新玩法。</p>
+							</div>
+							<a class="information_btn" href="#">查看详情</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+		<div class="index"></div>
+	</body>
+</html>
