@@ -345,6 +345,9 @@
 			    height: 9px;
 			    top: 16px;
 			    right: 135px;
+			    transform: translateX(-100%);
+			    opacity: 0;
+			    transition: all 1s;
 			}
 			.game_header_title h2:after{
 				content: "";
@@ -355,6 +358,17 @@
 				background: url(../img/section_line.png) no-repeat -882px 0;
 				top: 16px;
 				left: 131px;
+				transform: translateX(100%);
+			    opacity: 0;
+			    transition: all 1s;
+			}
+			.game_header_title h2.active:before{
+				transform: translateX(0);
+			    opacity: 1;
+			}
+			.game_header_title h2.active:after{
+				transform: translateX(0);
+			    opacity: 1;
 			}
 			.game-box .hotgame{
 				margin-top: 50px;
@@ -435,6 +449,21 @@
 				background: url(../img/gamepro_bg.png) no-repeat;
 				margin: 0 3px;
 				padding: 0 9px;
+				transform: translateY(200px);
+				opacity: 0;
+			}
+			.game_con ul li.active{
+				transform: translateY(0px);
+				opacity: 1;
+			}
+			.game_con ul li:nth-child(1){
+				transition: all 1s;
+			}
+			.game_con ul li:nth-child(2){
+				transition: all 1.4s;
+			}
+			.game_con ul li:nth-child(3){
+				transition: all 1.8s;
 			}
 			.game_con ul li a{
 				position: relative;
@@ -511,6 +540,9 @@
 			    height: 9px;
 			    top: 16px;
 			    right: 135px;
+			    transform: translateX(-100%);
+			    transition: all 1s;
+			    opacity: 0;
 			}
 			.news-box .news-box_title h2:after{
 				content: "";
@@ -521,6 +553,17 @@
 				background: url(../img/section_line.png) no-repeat -882px 0;
 				top: 16px;
 				left: 131px;
+				transform: translateX(100%);
+				transition: all 1s; 
+				opacity: 0;
+			}
+			.news-box .news-box_title h2.active:before{
+				transform: translateX(0);
+			    opacity: 1;
+			}
+			.news-box .news-box_title h2.active:after{
+				transform: translateX(0);
+			    opacity: 1;
 			}
 			.news-box .news-box_title h2 span{
 				display: block;
@@ -822,6 +865,30 @@
 				display: inline-block;
 				width: 188px;
 				overflow: hidden;
+				transform: translateY(176px);
+				opacity: 0;
+			}
+			.bs-list li:nth-child(1){
+				transition: all 0.5s; 
+			}
+			.bs-list li:nth-child(2){
+				transition: all 0.9s;
+			}
+			.bs-list li:nth-child(3){
+				transition: all 1.3s;
+			}
+			.bs-list li:nth-child(4){
+				transition: all 1.7s;
+			}
+			.bs-list li:nth-child(5){
+				transition: all 2s;
+			}
+			.bs-list li:nth-child(6){
+				transition: all 2.3s;
+			}
+			.bs-list li.active{
+				transform: translateY(0px);
+				opacity: 1;
 			}
 			.bs-list li a{
 				display: block;
@@ -1051,4 +1118,4 @@
 				margin-top: 10px;
 				line-height: 23px;
 				color: #787878;
-			}
+			}gh-pages
