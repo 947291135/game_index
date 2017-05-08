@@ -1,4 +1,5 @@
 $(function(){
+				
 				var i =0;
 				var x=0;
 				var imgwidth;
@@ -17,6 +18,30 @@ $(function(){
 					imgwidth=$(window).width();		
 				}
 				maxwidth=imgwidth*6;
+				
+				
+				
+				$(window).scroll(function(){
+					var top =$(window).scrollTop();
+					console.log(top);
+					if(top>70&&top<1020)
+					{
+						$(".game_header_title h2").addClass("active");
+					}
+					if(top>223&&top<1420){
+						$(".hotgame_inner .game_con ul li").addClass("active");
+					}
+					if(top>632&&top<1800){
+						$(".colgame .game_con ul li").addClass("active");
+					}
+					if(top>926&&top<1893){
+						$(".news-box .news-box_title h2").addClass("active");
+					}
+					if(top>1742){
+						$(".bs-list li").addClass("active");
+					}
+				})
+				
 				
 				
 				
