@@ -23,7 +23,6 @@ $(function(){
 				
 				$(window).scroll(function(){
 					var top =$(window).scrollTop();
-					console.log(top);
 					if(top>70&&top<1020)
 					{
 						$(".game_header_title h2").addClass("active");
