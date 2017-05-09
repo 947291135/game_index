@@ -151,6 +151,17 @@
 			    color: #615f5f;
 			    font-size: 18px;
 			    font-family: "微软雅黑";
+			    border-bottom: 6px solid transparent;
+			    transition: all .3s; 
+			    
+			}
+			.nav_box .box_inner .nav li a.active{
+				border-color: #6E58A3;
+				color: #6E58A3;
+			}
+			.nav_box .box_inner .nav li a:hover{
+				border-color: #6E58A3;
+				color: #6E58A3;
 			}
 			.content{
 				width: 100%;
