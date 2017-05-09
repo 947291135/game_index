@@ -144,7 +144,7 @@ $(function(){
 				
 				
 				
-				
+				var a=1;
 				$(window).resize(function(){
 					var size =$(window).width();
 					if(size>1200){
